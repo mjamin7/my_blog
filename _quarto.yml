@@ -6,13 +6,12 @@ website:
   navbar:
     right:
       - about.md
+      - olympicsWeather.qmd
       - icon: github
-        href: https://github.com/votre_nom
-      - icon: linkedin
-        href: https://www.linkedin.com/in/votre_profil
+        href: https://github.com/mjamin7
 format:
   html:
-    theme: flatly
+    theme: quartz
     css: custom.css
 
-editor: vscode
+editor: rstudio

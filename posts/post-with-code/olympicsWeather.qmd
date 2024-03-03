@@ -1,17 +1,13 @@
 ---
-title: "Projet R avancé et Git"
-author: "Mathilde JAMIN"
+title: "Librairie olympicsWeather"
+author: "JAMIN Mathilde"
 date: "2024-03-10"
-categories: [news]
+categories: [news, code, analysis]
 ---
 
 ## Librairie olympicsWeather
 
 Ce package nous permet d'obtenir les prévisions métérologiques à sept jours selon l'adresse ou les coordonnées GPS souhaité. Vous pourrez également visualiser ces informations à l'aide d'un graphique.
-
-```{r, eval=FALSE}
-remotes::install_github("mjamin7/olympicsWeather")
-```
 
 ```{r, echo=FALSE}
 library(devtools)
@@ -26,6 +22,7 @@ library(usethis)
 library(lubridate)
 library(ggplot2)
 ```
+
 
 ```{r}
 library(olympicsWeather)
@@ -45,3 +42,4 @@ View(get_forecast("Tahiti"))
 print(get_forecast(c(43.276703,5.334791 )))
 View(get_forecast(c(43.276703,5.334791 )))
 ```
+

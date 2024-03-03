@@ -1,0 +1,27 @@
+# Ignorer les fichiers R indésirables
+.Rhistory
+
+# Ignorer les fichiers temporaires générés par R
+.RData
+.Rproj.user/
+
+# Ignorer les fichiers générés par des éditeurs de texte
+*.swp
+*.swo
+*.aux
+*.log
+
+# Ignorer les fichiers de configuration spécifiques à RStudio
+.Rproj.user/
+.Rproj.user/*
+
+# Ignorer les fichiers générés par knitr
+*_files/
+*_cache/
+
+# Ignorer les fichiers de sortie de RMarkdown
+*.html
+*.pdf
+
+# Ignorer les fichiers générés par quarto
+.quarto/
