@@ -5,14 +5,13 @@ website:
   title: "my_blog"
   navbar:
     right:
-      - about.md
       - index.qmd
-      - olympicsWeather.qmd
+      - olympicsWeather.html
       - icon: github
         href: https://github.com/mjamin7
 format:
   html:
-    theme: quartz
+    theme: morph
     css: styles.css
 
 editor:

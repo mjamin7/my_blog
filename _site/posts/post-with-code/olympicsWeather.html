@@ -116,14 +116,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="dropdown-header">
- <span class="menu-text">about.md</span></li>
   <li class="nav-item">
     <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">my_blog</span></a>
   </li>  
   <li class="dropdown-header">
- <span class="menu-text">olympicsWeather.qmd</span></li>
+ <span class="menu-text">olympicsWeather.html</span></li>
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/mjamin7" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
@@ -210,7 +208,8 @@ Attachement du package : 'lubridate'</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(olympicsWeather)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(olympicsWeather)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quarto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">get_forecast</span>(<span class="st">"Stade de France"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -218,7 +217,7 @@ Attachement du package : 'lubridate'</code></pre>
 <pre><code>Passing 1 address to the ArcGIS single address geocoder</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Query completed in: 2.3 seconds</code></pre>
+<pre><code>Query completed in: 2.2 seconds</code></pre>
 </div>
 <div class="cell-output-display">
 <p><img src="olympicsWeather_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
@@ -236,7 +235,7 @@ Attachement du package : 'lubridate'</code></pre>
  7 2024-03-04 06:00:00                 1.7                          -0.7
  8 2024-03-04 07:00:00                 1.9                          -0.5
  9 2024-03-04 08:00:00                 2.5                           0.4
-10 2024-03-04 09:00:00                 4.6                           2.5
+10 2024-03-04 09:00:00                 5.8                           3.3
 # ℹ 158 more rows
 # ℹ 2 more variables: precipitation_proba &lt;int&gt;, precipitation &lt;dbl&gt;</code></pre>
 </div>

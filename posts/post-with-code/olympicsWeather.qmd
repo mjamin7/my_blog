@@ -26,6 +26,7 @@ library(ggplot2)
 
 ```{r}
 library(olympicsWeather)
+library(quarto)
 ```
 
 ```{r}
