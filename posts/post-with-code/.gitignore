@@ -1,12 +1,8 @@
-# Ignorer les fichiers R indésirables
+.Rproj.user
 .Rhistory
+.Rdata
+.httr-oauth
+.DS_Store
 
-# Ignorer les fichiers temporaires générés par R
-.RData
-.Rproj.user/
-
-# Ignorer les fichiers de configuration spécifiques à RStudio
-.Rproj.user/
-.Rproj.user/*
 
 !site/
