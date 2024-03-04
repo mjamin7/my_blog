@@ -7,13 +7,15 @@ website:
     right:
       - about.md
       - index.qmd
-      - _quarto.yml
       - olympicsWeather.qmd
       - icon: github
         href: https://github.com/mjamin7
 format:
   html:
     theme: quartz
-    css: custom.css
+    css: styles.css
 
-editor: rstudio
+editor:
+  name: rstudio
+  path: C:/Users/mathi/OneDrive/Bureau
+
