@@ -183,41 +183,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Ce package nous permet d’obtenir les prévisions métérologiques à sept jours selon l’adresse ou les coordonnées GPS souhaité. Vous pourrez également visualiser ces informations à l’aide d’un graphique.</p>
 <div class="cell">
 <div class="cell-output cell-output-stderr">
-<pre><code>Le chargement a nécessité le package : usethis</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
 <pre><code>Warning: le package 'jsonlite' a été compilé avec la version R 4.3.2</code></pre>
 </div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attachement du package : 'purrr'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>L'objet suivant est masqué depuis 'package:jsonlite':
-
-    flatten</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attachement du package : 'lubridate'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Les objets suivants sont masqués depuis 'package:base':
-
-    date, intersect, setdiff, union</code></pre>
-</div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(olympicsWeather)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quarto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(olympicsWeather)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quarto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">get_forecast</span>(<span class="st">"Stade de France"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">get_forecast</span>(<span class="st">"Stade de France"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Passing 1 address to the ArcGIS single address geocoder</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Query completed in: 2.2 seconds</code></pre>
+<pre><code>Query completed in: 2.1 seconds</code></pre>
 </div>
 <div class="cell-output-display">
 <p><img src="olympicsWeather_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
@@ -239,24 +218,14 @@ Attachement du package : 'lubridate'</code></pre>
 # ℹ 158 more rows
 # ℹ 2 more variables: precipitation_proba &lt;int&gt;, precipitation &lt;dbl&gt;</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(<span class="fu">get_forecast</span>(<span class="st">"Stade de France"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">get_forecast</span>(<span class="st">"Tahiti"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Passing 1 address to the ArcGIS single address geocoder</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Query completed in: 0.3 seconds</code></pre>
-</div>
-<div class="cell-output-display">
-<p><img src="olympicsWeather_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">get_forecast</span>(<span class="st">"Tahiti"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Passing 1 address to the ArcGIS single address geocoder</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Query completed in: 0.2 seconds</code></pre>
 </div>
 <div class="cell-output-display">
 <p><img src="olympicsWeather_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
@@ -278,19 +247,9 @@ Attachement du package : 'lubridate'</code></pre>
 # ℹ 158 more rows
 # ℹ 2 more variables: precipitation_proba &lt;int&gt;, precipitation &lt;dbl&gt;</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(<span class="fu">get_forecast</span>(<span class="st">"Tahiti"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Passing 1 address to the ArcGIS single address geocoder</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Query completed in: 0.6 seconds</code></pre>
-</div>
-<div class="cell-output-display">
-<p><img src="olympicsWeather_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid" width="672"></p>
-</div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">get_forecast</span>(<span class="fu">c</span>(<span class="fl">43.276703</span>,<span class="fl">5.334791</span> )))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">get_forecast</span>(<span class="fu">c</span>(<span class="fl">43.276703</span>,<span class="fl">5.334791</span> )))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="olympicsWeather_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -310,10 +269,6 @@ Attachement du package : 'lubridate'</code></pre>
 10 2024-03-04 09:00:00                 9.6                           4.8
 # ℹ 158 more rows
 # ℹ 2 more variables: precipitation_proba &lt;int&gt;, precipitation &lt;dbl&gt;</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(<span class="fu">get_forecast</span>(<span class="fu">c</span>(<span class="fl">43.276703</span>,<span class="fl">5.334791</span> )))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<p><img src="olympicsWeather_files/figure-html/unnamed-chunk-5-2.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 

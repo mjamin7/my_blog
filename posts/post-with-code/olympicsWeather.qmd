@@ -9,7 +9,7 @@ categories: [news, code, analysis]
 
 Ce package nous permet d'obtenir les prévisions métérologiques à sept jours selon l'adresse ou les coordonnées GPS souhaité. Vous pourrez également visualiser ces informations à l'aide d'un graphique.
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, message=FALSE}
 library(devtools)
 library(httr2)
 library(jsonlite)
@@ -31,16 +31,13 @@ library(quarto)
 
 ```{r}
 print(get_forecast("Stade de France"))
-View(get_forecast("Stade de France"))
 ```
 
 ```{r}
 print(get_forecast("Tahiti"))
-View(get_forecast("Tahiti"))
 ```
 
 ```{r}
 print(get_forecast(c(43.276703,5.334791 )))
-View(get_forecast(c(43.276703,5.334791 )))
 ```
 
