@@ -24,20 +24,20 @@ library(ggplot2)
 ```
 
 
-```{r}
+```{r, message=FALSE}
 library(olympicsWeather)
 library(quarto)
 ```
 
 ```{r}
-print(get_forecast("Stade de France"))
+get_forecast("Stade de France")
 ```
 
 ```{r}
-print(get_forecast("Tahiti"))
+get_forecast("Tahiti")
 ```
 
 ```{r}
-print(get_forecast(c(43.276703,5.334791 )))
+get_forecast(c(43.276703,5.334791 ))
 ```
 
