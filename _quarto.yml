@@ -6,12 +6,12 @@ website:
   navbar:
     right:
       - index.qmd
-      - olympicsWeather.html
+      - olympicsWeather.qmd
       - icon: github
         href: https://github.com/mjamin7
 format:
   html:
-    theme: morph
+    theme: minty
     css: styles.css
 
 editor:
